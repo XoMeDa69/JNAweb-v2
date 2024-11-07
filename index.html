@@ -5,31 +5,57 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>JNA - Page d'acceuil</title>
 	<link href="css\main.css" rel="stylesheet">
+	<link href="css\caroussel_acc.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="core">
 
 	<nav class="navbar">
-		<h1>JNA WEBSITE</h1>
+		<h1>JNA WEBSITE <i class="fa fa-code" style="font-size:28px"></i></h1>
 		<ul class="nav-links">
 			<li>
 				<button>ACCUEIL</button>
 			</li>
 			<li>
-				<button>JEUX</button>
+				<button>CATALOGUE</button>
 			</li>
 			<li>
 				<button>CONTACT</button>
 			</li>
 		</ul>
 	</nav>
-
 	<div class="container">
-		<div>
-			<img src="image\image1.jpg" alt="">
-			<div>
-				<p>Bienvenue ! sur notre site JNA qui répertorie les meilleures jeux de la planete</p>
-			</div>
+		<div class="welcome-text">
+			<h2>Bienvenue sur JNA!</h2>
 		</div>
+		<div class="carousel">
+			<button class="btn" id="prev">&#10096;</button>
+			<button class="btn" id="next">&#10097;</button>
+			<ul>
+			  <li class="slide">
+				<img src="image\img1.jpg" alt="image carousel">
+			  </li>
+			  <li class="slide active">
+				<img src="image\img3.jpg" alt="image carousel">
+			  </li>
+			  <li class="slide">
+				<img src="image\img2.jpg" alt="image carousel">
+			  </li>
+			  <li class="slide">
+				<img src="image\img4.jpg" alt="image carousel">
+			  </li>
+			  <li class="slide">
+				<img src="image\img5.jpg" alt="image carousel">
+			  </li>
+			</ul>
+		</div>
+		<script src="js\caroussel_js.js"></script>
+	
 	</div>
+	<footer>
+		<div class="end_page">
+			<p>© JNA WEBSITE - All right reserved.</p>
+		</div>
+	</footer>
 </body>
 </html>

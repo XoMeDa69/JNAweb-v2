@@ -157,6 +157,7 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
 
 textarea {
     height: 100px;
+    resize: none;
 }
 
 input[type="submit"] {

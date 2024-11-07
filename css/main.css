@@ -58,7 +58,18 @@ main {
     overflow: white;
 }
 
-.core  {
+.nav-links button:hover {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+    overflow: #282829;
+    color: #282829;
+    transition: all 0.1s ease-out;
+}
+
+.core  {    
     background-color: var(--primary-color);
 }
 
@@ -66,12 +77,117 @@ p{
     color: var(--text-color);
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.container{
+    margin-top: 4.4rem;
+    display: flex;
+    flex-direction: row;
 }
 
-li {
-    display: inline;
+.img1{
+    float: left;
+}
+
+.text_img1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--nav-bg-color);
+    z-index: 1000;
+    width: 50vw;
+    height: 30vh;
+    margin-left: 2.5rem;
+    margin-top: 5rem;
+    padding: 1em;
+}
+
+footer{
+    background-color: #282829;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.welcome-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 9999;
+    margin-left: 5rem;
+}
+
+.welcome-text h2 {
+    font-size: 3.5rem;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries pour rendre le site responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text_img1 {
+        width: 80vw;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .welcome-text {
+        margin-left: 0;
+        padding: 0 1rem;
+    }
+
+    .welcome-text h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .nav-links button {
+        font-size: 0.9rem;
+    }
+
+    .welcome-text h2 {
+        font-size: 2rem;
+    }
 }

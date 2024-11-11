@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="..\css\contact.css" rel="stylesheet">
+    <link href="..\css\loader.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>JNA - Contact</title>
+</head>
+<body>
+    <div id="loading" class="loader"></div>
+	<nav class="navbar">
+		<h1>JNA WEBSITE <i class="fa fa-code" style="font-size:28px"></i></h1>
+        <ul class="nav-links">
+            <li>
+                <button onclick="location.href='../index.html'">ACCUEIL</button>
+            </li>
+            <li>
+                <button onclick="location.href='catalog.html'">CATALOGUE</button>
+            </li>
+            <li>
+                <button href="#">CONTACT</button>
+            </li>
+        </ul>
+	</nav>
+    <div class="container">
+        <form class="box_contact">
+            <h1>Contactez-nous</h1>
+            <div class="form_contact">
+                <input type="text" id="FirstName" placeholder="Prénom" required>
+                <input type="text" id="lastName" placeholder="Nom" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="mobile" placeholder="Téléphone" required>
+                <textarea placeholder="Votre message..." required></textarea>
+                <input type="submit" value="Envoyer" id="button">
+            </div>
+        </form>
+    </div>
+
+    </div>
+    <script src="..\js\load.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* Somes variable for make thing more easy */
+:root {
+    --primary-color: #323233;
+    --nav-color: #8957e6;
+    --text-color: white;
+    --nav-bg-color: #8957e64b;
+}
+
+/* core of the site */
+
+body {
+    font-family: 'Inter', 'Arial', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--nav-bg-color);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+    overflow: white;
+}
+
+.nav-links button:hover {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+    overflow: #282829;
+    color: #282829;
+    transition: all 0.1s ease-out;
+}
+
+/* color of the background */
+.core  {    
+    background-color: var(--primary-color);
+}
+
+p{
+    color: var(--text-color);
+}
+
+/* basic block of the site */
+.container{
+    margin-top: 4.4rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.img1{
+    float: left;
+}
+
+/* Bottom of the site for copyright */
+footer{
+    background-color: #282829;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Text on middle of the page */
+
+.welcome-text {
+    position: absolute;
+    text-align: center;
+    background-color: #57437ca6;
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-text h2{
+    font-size: 3.5rem;
+    color: #000;
+    text-shadow: 1px 1px 0 #fff, 
+                -1px -1px 0 #fff,
+                1px -1px 0 #fff,
+                -1px 1px 0 #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.welcome-text p{
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Smooth animation for the middle text */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Query for make the site responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text_img1 {
+        width: 80vw;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .welcome-text {
+        margin-left: 0;
+        padding: 0 1rem;
+    }
+
+    .welcome-text h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .nav-links button {
+        font-size: 0.9rem;
+    }
+
+    .welcome-text h2 {
+        font-size: 2rem;
+    }
+}

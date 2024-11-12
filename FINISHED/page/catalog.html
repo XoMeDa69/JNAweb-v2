@@ -9,6 +9,7 @@
     <title>JNA - Catalogue</title>
 </head>
 <body>
+    <div id="loading" class="loader"></div>
     <div class="container">
         <nav class="navbar">
             <h1>JNA WEBSITE <i class="fa fa-code" style="font-size:28px"></i></h1>
@@ -24,36 +25,27 @@
                 </li>
             </ul>
         </nav>
-
-        <div class="search">
-            <h1 class="text-search">Recherche un jeu !</h1>
-            <input type="search" id="site-search" name="" style="margin-right: 10px;" /> 
-            <button class="btn_search" type="submit"><i class="fa fa-search" style="font-size:36px"></i></button>
+        <div class="navcenter">
+            <div class="search">
+                <h1 class="text-search">CATALOGUE DES JEUX</h1>
+                <input type="search" id="site-search" name="" placeholder="Rechercher un jeu !" />
+                <div class="btn_search">
+                    <i class="fa fa-search" style="font-size:36px"></i>
+                </div>
+            </div>
         </div>
 
         <div class="container2">
-            <div id="js-preloader" class="js-preloader loaded">
-                <div class="preloader-inner">
-                    <span class="dot"></span>
-                    <div class="dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
             <div class="catalog">
                 <div class="gameList"></div>
                 <div class="most-popular">
                     <div class="main-button hidden">
-                    <a class="more-game-btn" href="javascript:void(0)">Load More Games</a>
+                        <a href="javascript:void(0)">Load More Games</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <script src="..\js\apikey.js"></script>
     <script src="..\js\mainjs.js"></script>
     <script src="..\js\load.js"></script>
 </body>

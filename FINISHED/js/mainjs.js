@@ -1,8 +1,13 @@
 const keyapp = "e333805db6c041b3aa4abda25d09a021";
 const gameList = document.querySelector(".gameList");
-const loaderEl = document.getElementById("js-preloader");
+const loaderEl = document.getElementById("loading");
 const searchInput = document.getElementById("site-search");
 const searchButton = document.querySelector(".btn_search");
+const loadMoreGamesBtn = document.querySelector(".main-button")
+
+const url = `https://api.rawg.io/api/games?key=${keyapp}&date=2023-06-01,2024-10-30&ordering=-added`
+
+let nextGameListUrl = null;
 
 const getPlatformStr = (platforms) => {
     const platformStr = platforms.map(pl => pl.platform.name).join(", ");
@@ -14,7 +19,7 @@ const getPlatformStr = (platforms) => {
 
 function loadGames(url){
     loaderEl.classList.remove("loaded");
-    
+
     fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -25,7 +30,7 @@ function loadGames(url){
                 const gameItemEl = `
                 <li class="item-a">
                     <div class="carte_action">
-                        <img src="${game.background_image}" alt="Image de ${game.name}" class="modele">
+                        <img class="map" src="${game.background_image}" alt="Image de ${game.name}" class="modele">
                         <h4 class="game-name">${game.name}<br><span class="platforms">${getPlatformStr(game.parent_platforms)}</span></h4>
                         <ul class="game-details">
                             <li><i class="fa fa-star"></i> <span class="rating">${game.rating}</span></li>
@@ -38,11 +43,19 @@ function loadGames(url){
                 gameList.insertAdjacentHTML("beforeend", gameItemEl)
             });
             loaderEl.classList.add("loaded");
+            if (nextGameListUrl) {
+                loadMoreGamesBtn.classList.remove("hidden");
+            } else {
+                loadMoreGamesBtn.classList.add("hidden");
+            }
         })
         .catch(error => {
             console.log("Une erreur s'est produite :", error);
         });
 }
+
+// Charger les jeux par défaut
+loadGames(url);
 
 searchButton.addEventListener("click", () => {
     const query = searchInput.value.trim();
@@ -52,5 +65,10 @@ searchButton.addEventListener("click", () => {
     }
 });
 
-// Charger les jeux par défaut
-loadGames(`https://api.rawg.io/api/games?key=${keyapp}&date=2023-06-01,2024-10-30&ordering=-added`);
+loadMoreGamesBtn.addEventListener("click", ()=>{
+    if(nextGameListUrl){
+        loadGames(nextGameListUrl);
+        console.log("PAWN");
+        
+    }
+})

@@ -10,5 +10,5 @@
 
 <img src="https://cdn.discordapp.com/attachments/1171918252054695946/1307001123923689542/image.png?ex=6738b726&is=673765a6&hm=9f7eaa2ad4bfd82c7dc8533ceee28fe85e99156feebaef0376ae9f5a8f97de8a&" height="400" alt="javascript logo"  />
 <img width="400" />
-<img src="https://cdn.discordapp.com/attachments/1171918252054695946/1307011935681904640/image.png?ex=6738c138&is=67376fb8&hm=067060e0198b30b260897d7f747fdd68501d2d51d3c91add8bef9a7743cd010c&" height="400" alt="javascript logo"  />
+<img src="https://cdn.discordapp.com/attachments/1171918252054695946/1307013548886458421/image.png?ex=6738c2b9&is=67377139&hm=a93482826a329bb85d525d552f3b530ca735f1dca61cbe8589c72a8fcf4bca77&" height="400" alt="javascript logo"  />
 <img width="400" />

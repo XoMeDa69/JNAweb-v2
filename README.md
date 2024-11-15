@@ -19,3 +19,50 @@
 <h4 align="left">Et notre page de contact</h4>
 <img src="https://cdn.discordapp.com/attachments/1171918252054695946/1307021231450619954/image.png?ex=6738c9e0&is=67377860&hm=03b1dc0768b77bcdc8e61e5ed76331b3ce4e8620f625a5a923175857d91d743e&" height="400" alt="javascript logo"  />
 <img width="400" />
+
+<h1 align="left">Voici sur la charte graphique du site JNA ! 📓</h1>
+
+<p align="left">
+- Palette de Couleurs
+
+
+Couleurs principales :
+
+
+Violet Foncé. Cette couleur, présente dans la barre de navigation, symbolise la modernité et la technologie, . Elle sert de fil conducteur pour la navigation sur notre site.
+
+
+Noir / Gris Foncé  : Utilisé en arrière-plan, le noir apporte une alchimi avec la couleur violette
+
+
+Jaune Or  : Avec ce jaune éclatant, nous accentuons les messages importants, tels que "Bienvenue sur JNA!", afin de capturer l’attention de nos visiteurs.
+
+
+
+
+Couleurs secondaires :
+
+
+Gris Clair : Parfait pour les textes secondaires, cette couleur crée une hiérarchie visuelle en restant subtile mais lisible.
+
+
+Blanc : Pour le texte complémentaire et les détails, 
+
+
+Typographie
+
+
+Police Principale : Nous avons choisi une police sans empattement, comme Roboto ou Montserrat, pour un rendu moderne, professionnel et lisible.
+
+
+Police des Titres : Les titres sont mis en valeur avec une version en gras de la police principale (par exemple, Roboto Bold), accentuant les éléments importants.
+
+
+Couleurs de texte : blanc et noir
+
+
+Les titres sont en jaune clair pour garantir une bonne visibilité et attirer l’œil.
+
+
+Les sous-titres et descriptions sont en blanc ou en gris clair pour une hiérarchie naturelle.
+</p>

@@ -1,0 +1,233 @@
+/* CSS Variables */
+:root {
+    --primary-color: #57437c;
+    --secondary-color: #282829;
+    --text-color: #ffffff;
+    --highlight-color: #8a67c9;
+    --card-bg: rgba(87, 67, 124, 0.1);
+    --nav-bg-color: rgba(40, 40, 41, 0.95);
+}
+
+/* Basic Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    min-height: 100vh;
+    line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
+    display: grid ;
+    height: 100px;
+    justify-content: center;
+    align-items: normal;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+/* Reset Defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+    overflow: white;
+}
+
+.nav-btn {
+    color: var(--text-color);
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+/* Core Elements */
+.core  {
+    background-color: var(--primary-color);
+}
+
+p{
+    color: var(--text-color);
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    margin:  0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+/* Main Content Layout */
+.main {
+    padding: 120px 5% 2rem;
+}
+
+.CONTAINER {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Title Animations */
+.title-animated {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    animation: fadeInDown 1s ease;
+}
+
+.highlight {
+    color: var(--highlight-color);
+}
+
+/* Content Boxes */
+.box-principal {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling */
+.base-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.apropos-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Grid Layout */
+.apropos-grid {
+    display: grid;
+    gap: 1.1rem;
+}
+
+.apropos-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.apropos-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Social Media Section */
+.socialblock {
+    text-align: center;
+    padding: 2rem;
+}
+
+.social-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-links i{
+    color: white;
+}
+
+.social-btn {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-btn:hover {
+    color: var(--highlight-color);
+    transform: scale(1.2);
+}
+
+.social-text {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .title-animated {
+        font-size: 2rem;
+    }
+    
+    .apropos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-links {
+        flex-wrap: wrap;
+    }
+}

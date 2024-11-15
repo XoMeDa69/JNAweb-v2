@@ -1,15 +1,16 @@
 /* Somes variable for make thing more easy */
 :root {
     --primary-color: #323233;
-    --nav-color: #8957e6;
+    --nav-color: #57437c;
     --text-color: white;
     --nav-bg-color: #8957e64b;
+    --highlight-color: #8a67c9;
 }
 
 /* core of the site */
 
 body {
-    font-family: 'Inter', 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--primary-color);
     color: var(--text-color);
     line-height: 1.6;
@@ -28,7 +29,7 @@ body {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: var(--nav-bg-color);
+    background-color: var(--nav-color);
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
@@ -62,6 +63,15 @@ main {
     overflow: white;
 }
 
+.nav-btn {
+    color: var(--text-color);
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
 .nav-links button:hover {
     background: none;
     border: none;
@@ -73,7 +83,17 @@ main {
     transition: all 0.1s ease-out;
 }
 
-/* color of the background */
+.jnalogo{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* color for page element */
+.highlight {
+    color: var(--highlight-color);
+}
+
 .core  {    
     background-color: var(--primary-color);
 }
@@ -93,7 +113,7 @@ p{
     float: left;
 }
 
-/* Bottom of the site for copyright */
+/* Bottom of the site for copyright (pls don't copy my site :c) */
 footer{
     background-color: #282829;
     display: flex;
@@ -109,28 +129,35 @@ footer{
 .welcome-text {
     position: absolute;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #57437ca6;
+    backdrop-filter: blur(10px);
     border-radius: 1rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .welcome-text h2{
     font-size: 3.5rem;
-    color: #FFD700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 25px #fff, 0 0 25px #fff, 0 0 25px #fff, 0 0 25px #fff;
+    color: #000;
+    text-shadow: 1px 1px 0 #fff, 
+                -1px -1px 0 #fff,
+                1px -1px 0 #fff,
+                -1px 1px 0 #fff;
     font-weight: bold;
     letter-spacing: 2px;
     animation: fadeIn 1.5s ease-in;
 }
 
 .welcome-text p{
-    font-size: 1rem;
-    color: #c9ac0c;
+    font-size: 1.2rem;
+    color: #000;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 1.5;
     animation: fadeIn 1.5s ease-in;
 }
 

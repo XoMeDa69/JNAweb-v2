@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+<!-- SECTION HEAD -->
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>JNA - Page d'acceuil</title>
 	<link href="css\main.css" rel="stylesheet">
 	<link href="css\caroussel_acc.css" rel="stylesheet">
+	<link href="css\loader.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
+<!-- SECTION BODY -->
 <body class="core">
+	<div id="loading" class="loader"></div>
 
 	<nav class="navbar">
-		<h1>JNA WEBSITE <i class="fa fa-code" style="font-size:28px"></i></h1>
+		<a class="jnalogo" href="#"><h1><span class="highlight">JNA</span> WEBSITE <i class="fa fa-code" style="font-size:28px"></i></h1></a>
 		<ul class="nav-links">
 			<li>
-				<button href="#">ACCUEIL</button>
-			</li>
+                <button onclick="location.href='page\\catalog.html'" class="nav-btn">
+                    <i class="fa-solid fa-gamepad"></i> CATALOGUE
+                </button>
+            </li>
 			<li>
-				<button href="page\catalog.html">CATALOGUE</button>
-			</li>
+                <button onclick="location.href='page\\apropos.html'" class="nav-btn">
+                    <i class="fa-solid fa-user"></i> A PROPOS
+                </button>
+            </li>
 			<li>
-				<button href="page\contact.html">CONTACT</button>
+				<button onclick="location.href='page\\contact.html'" class="nav-btn">
+					<i class="fa-solid fa-envelope"></i> CONTACT
+				</button>
 			</li>
 		</ul>
 	</nav>
+
 	<div class="container">
 		<div class="welcome-text">
 			<h2>Bienvenue sur JNA!</h2>
@@ -51,12 +64,14 @@
 			</ul>
 		</div>
 		<script src="js\caroussel_js.js"></script>
-	
 	</div>
+
 	<footer>
 		<div class="end_page">
 			<p>© JNA WEBSITE - All right reserved.</p>
 		</div>
 	</footer>
+	<!-- JAVASCRIPT IMPLEMTATION -->
+	<script src="js\load.js"></script>
 </body>
 </html>

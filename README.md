@@ -33,40 +33,26 @@
 Couleurs principales :
 
 
-Violet Foncé. Cette couleur, présente dans la barre de navigation, symbolise la modernité et la technologie, . Elle sert de fil conducteur pour la navigation sur notre site.
+Violet Foncé (#8a67c9). Cette couleur, présente dans la barre de navigation, ajoute un coté récent et moderne au site avec un thème basé sur le jeu vidéo
 
 
-Noir / Gris Foncé  : Utilisé en arrière-plan, le noir apporte une alchimi avec la couleur violette
-
-
-Jaune Or  : Avec ce jaune éclatant, nous accentuons les messages importants, tels que "Bienvenue sur JNA!", afin de capturer l’attention de nos visiteurs.
-
-
+Noir / Gris Foncé (#323233) : Utilisé en arrière-plan, le noir apporte une alchimi avec la couleur violette et de faire un contraste qui se marie bien avec le violet.
 
 
 Couleurs secondaires :
 
 
-Gris Clair : Parfait pour les textes secondaires, cette couleur crée une hiérarchie visuelle en restant subtile mais lisible.
+Gris Clair : Parfait pour les textes secondaires, ça permet de différencier les textes les plus importants.
 
 
-Blanc : Pour le texte complémentaire et les détails, 
+Blanc : Pour le texte complémentaire et les détails
 
 
 Typographie
 
 
-Police Principale : Nous avons choisi une police sans empattement, comme Roboto ou Montserrat, pour un rendu moderne, professionnel et lisible.
-
-
-Police des Titres : Les titres sont mis en valeur avec une version en gras de la police principale (par exemple, Roboto Bold), accentuant les éléments importants.
+Police Principale : Nous avons choisi Arial c'est une police connu est passe partout
 
 
 Couleurs de texte : blanc et noir
-
-
-Les titres sont en jaune clair pour garantir une bonne visibilité et attirer l’œil.
-
-
-Les sous-titres et descriptions sont en blanc ou en gris clair pour une hiérarchie naturelle.
 </p>

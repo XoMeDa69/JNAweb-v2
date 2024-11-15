@@ -56,3 +56,6 @@ Police Principale : Nous avons choisi Arial c'est une police connu est passe par
 
 Couleurs de texte : blanc et noir
 </p>
+
+<h2 align="left">Répartition du projet 🚧</h2>
+<p align="left"><strong>Ayoub</strong> [Page de contact, page a propos] <br> <strong>Noam</strong> [Page d'acceuil, JS de la page catalogue (API)] <br> <strong>Jawad</strong> [Page catalogue, page a propos]</p>
